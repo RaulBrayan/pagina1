@@ -7,15 +7,16 @@
 </head>
 <body>
     
-    <div id="header-container"></div>
+    <div id="menu-container"></div>
     <h1>3</h1>
     <script>
-        fetch("header.html")
+        fetch("menu.html")
             .then(response => response.text())
             .then(data => {
-                document.getElementById("header-container").innerHTML = data;
+                document.getElementById("menu-container").innerHTML = data;
             });
     </script>
 </body>
 
 </html>
+
