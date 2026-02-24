@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+    <header>
+        <img src="https://i.pinimg.com/474x/f2/3f/79/f23f79511790c2e543aea41610a212a3.jpg" alt="Logo">
+
+        <!-- Checkbox oculto -->
+        <input type="checkbox" id="menu-toggle">
+
+        <!-- Icono hamburguesa -->
+        <label for="menu-toggle" class="menu-icon">
+            ☰
+        </label>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="casa.html">Casa</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-container").innerHTML = data;
+            });
+    </script>
+
+
+</body>
+
+</html>
